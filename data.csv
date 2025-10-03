@@ -1,0 +1,5 @@
+koi_score,koi_model_snr,koi_max_mult_ev,koi_count,koi_prad,koi_smet_err2,koi_prad_err1,kepoi_name,koi_dicco_msky,koi_dicco_msky_err,label
+0.82,15.3,2,5,1.5,0.01,0.05,K00001,0.002,0.001,1
+0.45,8.7,1,3,0.9,0.02,0.04,K00002,0.001,0.0008,0
+0.66,12.1,3,6,2.3,0.03,0.06,K00003,0.0015,0.0012,1
+0.29,6.5,1,2,0.7,0.01,0.02,K00004,0.0009,0.0007,0
