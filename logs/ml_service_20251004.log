@@ -110,3 +110,33 @@
 2025-10-04 01:04:36,386 - werkzeug - INFO -  * Debugger PIN: 106-080-285
 2025-10-04 01:05:50,971 - werkzeug - INFO -  * Detected change in 'D:\\nasa app challenge\\PYCHARM\\model_api_v3.py', reloading
 2025-10-04 01:05:51,177 - werkzeug - INFO -  * Restarting with stat
+2025-10-04 01:59:04,661 - ml_service - INFO - Starting ML Model API Service...
+2025-10-04 01:59:04,661 - ml_service - INFO - Swagger documentation available at: http://localhost:5000/docs
+2025-10-04 01:59:05,592 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.20.161.61:5000
+2025-10-04 01:59:05,592 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 01:59:05,594 - werkzeug - INFO -  * Restarting with stat
+2025-10-04 01:59:07,995 - ml_service - INFO - Starting ML Model API Service...
+2025-10-04 01:59:07,996 - ml_service - INFO - Swagger documentation available at: http://localhost:5000/docs
+2025-10-04 01:59:08,009 - werkzeug - WARNING -  * Debugger is active!
+2025-10-04 01:59:08,012 - werkzeug - INFO -  * Debugger PIN: 106-080-285
+2025-10-04 01:59:10,248 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:10] "GET /docs HTTP/1.1" 200 -
+2025-10-04 01:59:10,501 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:10] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-10-04 01:59:10,583 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:10] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-10-04 01:59:10,677 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:10] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-10-04 01:59:10,842 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:10] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-10-04 01:59:11,006 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:11] "GET /apispec.json HTTP/1.1" 200 -
+2025-10-04 01:59:11,019 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:11] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-10-04 01:59:34,227 - ml_service - INFO - Reading training data from data.csv
+2025-10-04 01:59:34,235 - ml_service - INFO - Data loaded: 10 rows, 11 columns
+2025-10-04 01:59:34,255 - ml_service - INFO - Data split: Train=10, Test=10
+2025-10-04 01:59:34,255 - ml_service - INFO - Training Logistic Regression...
+2025-10-04 01:59:34,278 - ml_service - INFO - Training XGBoost...
+2025-10-04 01:59:34,758 - ml_service - INFO - Evaluating logistic model...
+2025-10-04 01:59:34,915 - ml_service - INFO - Evaluating xgb model...
+2025-10-04 01:59:36,190 - ml_service - INFO - Saving models...
+2025-10-04 01:59:36,214 - ml_service - INFO - Metadata saved successfully
+2025-10-04 01:59:36,214 - ml_service - INFO - Training completed successfully
+2025-10-04 01:59:36,217 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:36] "POST /retrain HTTP/1.1" 200 -

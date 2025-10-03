@@ -587,10 +587,12 @@ def predict(model_type: str):
 
         response = {
             "model": model_type,
-            "prediction": int(pred),
+            "prediction": int(pred),  # ✅ convert np.int64 to int
             "prediction_label": pred_label,
-            "confidence": confidence,
-            "probabilities": prob_dict,
+            "confidence": float(np.max(proba)),  # ✅ convert np.float64 to float
+            "probabilities": {  # ✅ convert all np.float64 to float
+                label: float(prob) for label, prob in zip(all_labels, proba)
+            },
             "raw_probabilities": proba.tolist(),
             "timestamp": datetime.now().isoformat()
         }
