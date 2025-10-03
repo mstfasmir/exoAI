@@ -140,3 +140,74 @@
 2025-10-04 01:59:36,214 - ml_service - INFO - Metadata saved successfully
 2025-10-04 01:59:36,214 - ml_service - INFO - Training completed successfully
 2025-10-04 01:59:36,217 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 01:59:36] "POST /retrain HTTP/1.1" 200 -
+2025-10-04 02:20:38,701 - ml_service - INFO - Starting ML Model API Service...
+2025-10-04 02:20:38,701 - ml_service - INFO - Swagger documentation available at: http://localhost:5000/docs
+2025-10-04 02:20:39,616 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.20.161.61:5000
+2025-10-04 02:20:39,616 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 02:20:39,618 - werkzeug - INFO -  * Restarting with stat
+2025-10-04 02:20:42,610 - ml_service - INFO - Starting ML Model API Service...
+2025-10-04 02:20:42,611 - ml_service - INFO - Swagger documentation available at: http://localhost:5000/docs
+2025-10-04 02:20:42,622 - werkzeug - WARNING -  * Debugger is active!
+2025-10-04 02:20:42,624 - werkzeug - INFO -  * Debugger PIN: 106-080-285
+2025-10-04 02:20:42,812 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:42] "GET /docs HTTP/1.1" 200 -
+2025-10-04 02:20:43,070 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:43] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-10-04 02:20:43,078 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:43] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-10-04 02:20:43,083 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:43] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-10-04 02:20:43,084 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:43] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-10-04 02:20:43,273 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:43] "GET /apispec.json HTTP/1.1" 200 -
+2025-10-04 02:20:43,277 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:43] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-10-04 02:20:54,396 - ml_service - INFO - Reading training data from data.csv
+2025-10-04 02:20:54,401 - ml_service - INFO - Data loaded: 10 rows, 11 columns
+2025-10-04 02:20:54,412 - ml_service - INFO - Data split: Train=10, Test=10
+2025-10-04 02:20:54,412 - ml_service - INFO - Training Logistic Regression...
+2025-10-04 02:20:54,434 - ml_service - INFO - Training XGBoost...
+2025-10-04 02:20:54,870 - ml_service - INFO - Evaluating logistic model...
+2025-10-04 02:20:54,982 - ml_service - INFO - Evaluating xgb model...
+2025-10-04 02:20:56,262 - ml_service - INFO - Saving models...
+2025-10-04 02:20:56,289 - ml_service - INFO - Metadata saved successfully
+2025-10-04 02:20:56,289 - ml_service - INFO - Training completed successfully
+2025-10-04 02:20:56,292 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:20:56] "POST /retrain HTTP/1.1" 200 -
+2025-10-04 02:22:48,855 - ml_service - INFO - Reading training data from data.csv
+2025-10-04 02:22:48,859 - ml_service - INFO - Data loaded: 10 rows, 11 columns
+2025-10-04 02:22:48,869 - ml_service - INFO - Data split: Train=10, Test=10
+2025-10-04 02:22:48,869 - ml_service - INFO - Training Logistic Regression...
+2025-10-04 02:22:48,891 - ml_service - INFO - Training XGBoost...
+2025-10-04 02:22:49,156 - ml_service - INFO - Evaluating logistic model...
+2025-10-04 02:22:49,257 - ml_service - INFO - Evaluating xgb model...
+2025-10-04 02:22:50,572 - ml_service - INFO - Saving models...
+2025-10-04 02:22:50,599 - ml_service - INFO - Metadata saved successfully
+2025-10-04 02:22:50,599 - ml_service - INFO - Training completed successfully
+2025-10-04 02:22:50,603 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:22:50] "POST /retrain HTTP/1.1" 200 -
+2025-10-04 02:23:09,205 - ml_service - INFO - Prediction made: CONFIRMED (confidence: 0.852)
+2025-10-04 02:23:09,205 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:23:09] "POST /predict/logistic HTTP/1.1" 200 -
+2025-10-04 02:23:11,068 - ml_service - INFO - Prediction made: CONFIRMED (confidence: 0.852)
+2025-10-04 02:23:11,068 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:23:11] "POST /predict/logistic HTTP/1.1" 200 -
+2025-10-04 02:24:09,374 - ml_service - INFO - Starting ML Model API Service...
+2025-10-04 02:24:09,374 - ml_service - INFO - Swagger documentation available at: http://localhost:5000/docs
+2025-10-04 02:24:10,359 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.20.161.61:5000
+2025-10-04 02:24:10,359 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-04 02:24:10,362 - werkzeug - INFO -  * Restarting with stat
+2025-10-04 02:24:13,449 - ml_service - INFO - Starting ML Model API Service...
+2025-10-04 02:24:13,450 - ml_service - INFO - Swagger documentation available at: http://localhost:5000/docs
+2025-10-04 02:24:13,462 - werkzeug - WARNING -  * Debugger is active!
+2025-10-04 02:24:13,464 - werkzeug - INFO -  * Debugger PIN: 106-080-285
+2025-10-04 02:24:15,568 - ml_service - INFO - Reading training data from data.csv
+2025-10-04 02:24:15,574 - ml_service - INFO - Data loaded: 10 rows, 11 columns
+2025-10-04 02:24:15,588 - ml_service - INFO - Data split: Train=10, Test=10
+2025-10-04 02:24:15,588 - ml_service - INFO - Training Logistic Regression...
+2025-10-04 02:24:15,607 - ml_service - INFO - Training XGBoost...
+2025-10-04 02:24:15,986 - ml_service - INFO - Evaluating logistic model...
+2025-10-04 02:24:16,098 - ml_service - INFO - Evaluating xgb model...
+2025-10-04 02:24:17,412 - ml_service - INFO - Saving models...
+2025-10-04 02:24:17,447 - ml_service - INFO - Metadata saved successfully
+2025-10-04 02:24:17,447 - ml_service - INFO - Training completed successfully
+2025-10-04 02:24:17,450 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:24:17] "POST /retrain HTTP/1.1" 200 -
+2025-10-04 02:24:43,740 - ml_service - WARNING - Unknown kepoi_name encountered: y contains previously unseen labels: 'lkhwdvuk'
+2025-10-04 02:24:43,747 - ml_service - INFO - Prediction made: CANDIDATE (confidence: 0.880)
+2025-10-04 02:24:43,748 - werkzeug - INFO - 127.0.0.1 - - [04/Oct/2025 02:24:43] "POST /predict/logistic HTTP/1.1" 200 -
