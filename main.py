@@ -823,8 +823,8 @@ FEATURE_ORDER = [
     "koi_dicco_msky",
     "koi_dicco_msky_err"
 ]
-@app.route("/predict", methods=["POST"])
-def predict():
+@app.route("/predict-real", methods=["POST"])
+def predict_real():
 
     """
     Predict using XGBoost model
