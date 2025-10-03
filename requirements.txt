@@ -1,4 +1,5 @@
 pandas
+flasgger
 numpy
 scikit-learn
 xgboost
